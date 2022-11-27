@@ -1,0 +1,17 @@
+button{
+  margin: 5px;
+  width: 80%;
+}
+
+.agregarCurso{
+  margin: 5px;
+  width: 20%;
+}
+
+.true{
+  color: rgb(7, 215, 7);
+}
+
+.false{
+  color: rgb(255, 132, 132);
+}

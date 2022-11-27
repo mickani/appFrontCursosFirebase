@@ -1,0 +1,49 @@
+<div class="div1" align="center" *ngIf="curso">
+  <h1><b>EDITAR CURSO</b></h1>
+  <hr style="width: 70%">
+
+  <form (ngSubmit)="onUpdate()" #f="ngForm">
+
+    <div class="mb-3">
+      <label for="intitucion" class="mb-2"><b>Institución:</b></label>
+      <input type="text" class="form-control" id="institucion" name="institucion" placeholder="Institución"
+        [(ngModel)]="curso.institucion" required>
+    </div>
+    <br>
+
+    <div class="mb-3">
+      <label for="titulo" class="mb-2"><b>Título:</b></label>
+      <input type="text" class="form-control" name="titulo" id="titulo" placeholder="Título" [(ngModel)]="curso.titulo"
+        required>
+    </div>
+
+    <br>
+    <div>
+      <label for="finalizado" class="mb-2"><b>Finalizado?:</b></label>
+    </div>
+
+    <div>
+      <input class="form-check-input inputradio" type="radio" name="finalizado" id="finalizado1" value="true" [(ngModel)]="curso.finalizado"
+        required>
+      <label class="form-check-label" for="finalizado1">
+        Si
+      </label>
+
+      <input class="form-check-input finalizado inputradio" type="radio" name="finalizado" id="finalizado2" value="false"
+        [(ngModel)]="curso.finalizado" required>
+      <label class="form-check-label" for="finalizado2">
+        No
+      </label>
+    </div>
+
+    <br>
+    <div class="mb-3">
+      <label for="titulo" class="mb-2"><b>Fecha</b></label>
+      <input type="text" class="form-control" name="fecha" id="fecha" placeholder="Fecha" [(ngModel)]="curso.fecha">
+    </div>
+
+    <button type="submit" class="btn btn-success">Actualizar</button>
+  </form>
+  <hr style="width: 70%">
+  <!-- <a href="/admin/dashboard" type="button" class="btn btn-secondary">Volver</a> -->
+</div>

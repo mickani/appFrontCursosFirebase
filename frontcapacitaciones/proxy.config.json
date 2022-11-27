@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+    "tarjet": "appcursosrailway-production.up.railway.app",
+    "source": false,
+    "logLevel": "debug"
+  }
+}
